@@ -1,0 +1,3 @@
+fiels = { (ASCII_DIGIT | "." | "-")+ }
+record = { fiels ~ ("," ~ fiels)*}
+file = {SOI ~ (record ~ ("\r\n" | "\n"))* ~ EOI}
